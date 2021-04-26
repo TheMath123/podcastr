@@ -1,25 +1,26 @@
 # podcastr
 Projeto feito na NextLevelWeek#05 2021.
 
-Site de podcast, super divertido e infames.
+Site para escutar aquela podcast delicinha e massinha.
 
 ---
 
 #### Aplicação em funcionamento
 [Clique aqui para acessar]()
 
-![alt text]()
+![alt text](blob:https://imgur.com/9f704da2-1c73-41a2-b900-be8730f4d4d5)
 
 ---
 
 #### Features atuais
 - Player de audio
-- SSG
+- Static Site Generation
+- Navegação entre podcast
 
 ---
 
 #### Features futuras
-- [ ] ...
+- [ ] API NextJS
 
 ---
 
