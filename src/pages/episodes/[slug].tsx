@@ -17,7 +17,7 @@ type Episode = {
   publishedAt: string;
   url: string;
   description: string;
-  durationAsString: string;
+  duration: string;
 }
 
 type EpisodeProps = {
@@ -48,7 +48,7 @@ export default function episodes({ episode }: EpisodeProps ){
         <h1>{episode.title}</h1>
         <span>{episode.members}</span>
         <span>{episode.publishedAt}</span>
-        <span>{episode.durationAsString}</span>
+        <span>{episode.duration}</span>
       </header>
     
       <div 
@@ -95,7 +95,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     publishedAt: format(parseISO(data.published_at), 'd MMM yy', { locale: ptBR }),
     description: data.description,
     url: data.file.url,
-    durationAsString: convertDurationToTimeString(data.file.duration),
+    duration: convertDurationToTimeString(data.file.duration),
   };
 
   return {

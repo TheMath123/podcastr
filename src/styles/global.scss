@@ -21,14 +21,14 @@
   --purple-800: #6F48C9;
 }
 
-@media (max-width: 1080px){
+@media (max-width: 800px){
   html{
-    font-size: 93.75%; //15px
+    font-size: 90%; //15px
   }
 }
-@media (max-width: 720px){
+@media (max-width: 600px){
   html{
-    font-size: 87.5%; //14px
+    font-size: 85%; //14px
   }
 }
 
