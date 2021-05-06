@@ -8,7 +8,7 @@ Site para escutar aquele podcast delicinha e massinha.
 #### Aplicação em funcionamento
 [Clique aqui para acessar]()
 
-![Podcastr](blob:https://imgur.com/9f704da2-1c73-41a2-b900-be8730f4d4d5)
+![Podcastr](blob:https://imgur.com/cedcc284-c347-4999-af69-7296902f4858)
 
 ---
 
