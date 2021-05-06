@@ -1,11 +1,14 @@
+import React from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { format, parseISO } from 'date-fns';
-import ptBR from 'date-fns/locale/pt-BR';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { format, parseISO } from 'date-fns';
+import ptBR from 'date-fns/locale/pt-BR';
+
 import { api } from '../../services/api';
 import convertDurationToTimeString from '../../utils/convertDurationToTimeString';
+import { usePlayer } from '../../contexts/PlayerContext';
 
 import styles from './episode.module.scss';
 
@@ -17,7 +20,8 @@ type Episode = {
   publishedAt: string;
   url: string;
   description: string;
-  duration: string;
+  duration: number;
+  durationAsString: string;
 }
 
 type EpisodeProps = {
@@ -25,6 +29,8 @@ type EpisodeProps = {
 }
 
 export default function episodes({ episode }: EpisodeProps ){
+  const { play } = usePlayer();
+
   return(
     <div className={styles.episode}>
       <div className={styles.thumbnailContainer}>
@@ -39,7 +45,7 @@ export default function episodes({ episode }: EpisodeProps ){
           src={episode.thumbnail}
           objectFit="cover"
         />
-        <button type="button">
+        <button type="button" onClick={() => play(episode)}>
           <img src="/play.svg" alt="Tocar episódio"/>
         </button>
       </div>
@@ -48,7 +54,7 @@ export default function episodes({ episode }: EpisodeProps ){
         <h1>{episode.title}</h1>
         <span>{episode.members}</span>
         <span>{episode.publishedAt}</span>
-        <span>{episode.duration}</span>
+        <span>{episode.durationAsString}</span>
       </header>
     
       <div 
@@ -95,7 +101,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
     publishedAt: format(parseISO(data.published_at), 'd MMM yy', { locale: ptBR }),
     description: data.description,
     url: data.file.url,
-    duration: convertDurationToTimeString(data.file.duration),
+    duration: data.file.duration,
+    durationAsString: convertDurationToTimeString(data.file.duration),
   };
 
   return {
