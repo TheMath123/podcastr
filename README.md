@@ -6,7 +6,7 @@ Site para escutar aquele podcast delicinha e massinha.
 ---
 
 #### Aplicação em funcionamento
-[Clique aqui para acessar]()
+[Clique aqui para acessar](podcastr-iota.vercel.app)
 
 ![Podcastr](https://i.imgur.com/Leesf3D.png)
 
