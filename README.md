@@ -1,7 +1,7 @@
 # podcastr
 Projeto feito na NextLevelWeek#05 2021.
 
-Site para escutar aquele podcast delicinha e massinha.
+Plataforma de reprodução de podcast e até musicas.
 
 ---
 
