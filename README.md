@@ -1,5 +1,5 @@
 # podcastr
-Projeto feito na NextLevelWeek#05 2021.
+Projeto feito na NextLevelWeek#05 2021 da Rocketseat.
 
 Plataforma de reprodução de podcast e até musicas.
 
