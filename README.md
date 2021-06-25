@@ -5,10 +5,18 @@ Plataforma de reprodução de podcast e até musicas.
 
 ---
 
+### Prinicipais Tecnologias Utilizada
+- NextJS - React Framwork para Frontend
+- SASS -  Sass é a linguagem de extensão CSS
+
+---
+
 #### Aplicação em funcionamento
 [Clique aqui para acessar](podcastr-iota.vercel.app)
 
 ![Podcastr](https://i.imgur.com/Leesf3D.png)
+
+Aplicação hospedado na Vercel - empresa que mantem o projeto do NextJS.
 
 ---
 
@@ -16,11 +24,6 @@ Plataforma de reprodução de podcast e até musicas.
 - Player de audio
 - Static Site Generation
 - Navegação entre podcast
-
----
-
-#### Features futuras
-- [ ] API NextJS
 
 ---
 
