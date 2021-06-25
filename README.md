@@ -8,6 +8,7 @@ Plataforma de reprodução de podcast e até musicas.
 ### Prinicipais Tecnologias Utilizada
 - NextJS - React Framwork para Frontend
 - SASS -  Sass é a linguagem de extensão CSS
+- SSG -Static Site Generation no Next
 
 ---
 
