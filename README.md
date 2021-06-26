@@ -1,4 +1,4 @@
-# podcastr
+# :notes: podcastr
 Projeto feito na NextLevelWeek#05 2021 da Rocketseat.
 
 ## :computer: Projeto
